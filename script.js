@@ -47,6 +47,6 @@ stopButton.addEventListener("click", stop);
 //Speech recognition event
 recognition.addEventListener("result", (event) => {
   const phrase = event.results[event.results.length - 1][0].transcript;
-  const outputPhrase = phrase.charAt(0).toUpperCase() + phrase.slice(0) + ".";
+  const outputPhrase = phrase.charAt(0).toUpperCase() + phrase.slice(1) + ".";
   textsheet.innerHTML += `<p>${outputPhrase}</p>`;
 });
