@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="content">
+        <section id="doc"></section>
+            <section id="buttons-block">
+                <button class="button" id="start-button">Start</button>
+            <button class="button" id="stop-button" disabled>Stop</button>
+            <div id="lang-selector" class="select-dropdown">
+                <select>
+                    <option value="de-DE">German</option>
+                    <option value="ru-RU">Russian</option>
+                    <option value="en-BR" selected>English</option>
+                </select>
+            </div>
+            </div>
+        </section>
+        <p>
+            <span class="info-span" id="ru-RU_infospan" lang="ru-RU">*Внимание! Если Вы меняете язык - программа будет приостановленна. При повторном запуске, пожалуйста, разрешение к микорофону заново.</span>
+            <span class="info-span" id="de-DE_infospan" lang="de-DE">*Achtung! Wenn Sie die Sprache verändern - das Programm wird gestoppt. Bei dem erneuten Startvom Programm erlauben Sie bitte Benutzung von Micro nochmal.</span>
+            <span class="info-span" id="en-BR_infospan" lang="en-BR">*Attention! If you change the lenguage - the program will be stoped. By a new start of the program please allow using of your microphone again.</span>
+        </p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

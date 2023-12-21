@@ -1,0 +1,117 @@
+body {
+    margin: 20px 0;
+    padding: 0;
+    background: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+hr {
+    margin: 2px 0;
+    padding: 0;
+}
+
+#doc {
+    width: 100%;
+    padding: 10px 0px;
+    min-height: 10vh;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 2px 2px 1px rgb(75, 75, 75);
+}
+#doc > p{
+    margin: 8px;
+}
+p {
+    font-size: 20px;
+}
+.info-span {
+    color: white;
+    display: none;
+}
+#en-BR_infospan {
+    display: inline;
+}
+#content {
+    width: 80%;
+    margin: 0 auto;
+    font-size: inherit;
+}
+#buttons-block {
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.button {
+    display: block;
+    width: 7vw;
+    height: 5vh;
+    font-size: 1.15rem;
+    border-radius: 7%;
+    color: white;
+    box-shadow: 0px 0px 1px rgb(94, 94, 94);
+    border: none;
+    font-weight: bold;
+    transition: all ease 0.5s;
+    font-size: inherit;
+}
+#start-button {
+    background-color: green;
+}
+#stop-button {
+    background-color: red;
+}
+#start-button:hover {
+    background-color: rgb(0, 150, 0);
+    cursor: pointer;
+}
+#stop-button:hover {
+    background-color: rgb(255, 60, 0);
+    cursor: pointer;
+}
+#start-button:disabled,
+#start-button[disabled]{
+  background-color: rgb(245, 245, 245);
+  color: rgb(88, 88, 88);
+  cursor: not-allowed;
+}
+#stop-button:disabled,
+#stop-button[disabled]{
+  background-color: rgb(245, 245, 245);
+  color: rgb(88, 88, 88);
+  cursor: not-allowed;
+}
+#lang-selector {
+  width: 10vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 245);
+  border-radius: 4px;
+  font-size: inherit;
+}
+#lang-selector select {
+  font-size: 1rem;
+  font-weight: normal;
+  max-width: 100%;
+  padding: 8px 24px 8px 10px;
+  border: none;
+  background-color: transparent;
+  appearance: none;
+}
+#lang-selector select:active, .select-dropdown select:focus {
+  outline: none;
+  box-shadow: none;
+}
+#lang-selector:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  border-top: 5px solid rgb(77, 77, 77);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
